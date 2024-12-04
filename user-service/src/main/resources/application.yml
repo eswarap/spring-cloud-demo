@@ -6,8 +6,10 @@ spring:
     name: user-service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/microservices-1-db
-
+        uri: mongodb://localhost:27017/departments-db
+        username: root
+        password: root
+        database: departments-db
 
 jwt:
   secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY

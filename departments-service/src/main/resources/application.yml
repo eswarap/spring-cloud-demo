@@ -6,11 +6,11 @@ spring:
     name: department-service
   datasource:
     username: root
-    password: igorkosandyak
-    url: jdbc:mysql://localhost:3306/microservices
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:h2:mem:departments
+    driver-class-name: org.h2.Driver
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    properties.hibernate.dialect: org.hibernate.dialect.H2Dialect
